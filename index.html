@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>360 Viewer</title>
+    <script src="https://pannellum.org/js/pannellum.js"></script>
+</head>
+<body>
+    <div id="panorama" style="width: 100vw; height: 100vh;"></div>
+    <script>
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": "ioniq5.jpg",
+            "autoLoad": true,
+            // Customization options:
+            "autoRotate": -2,           // Automatically rotates the view at -2 degrees per second
+            "showZoomCtrl": true,       // Displays the zoom control
+            "showFullscreenCtrl": true, // Displays the fullscreen control
+            "yaw": 90,                  // Sets the initial horizontal angle (in degrees)
+            "pitch": 10,                // Sets the initial vertical angle (in degrees)
+            "hfov": 110,                // Sets the initial horizontal field of view
+            "showDebug": true           // Enables debug mode (check the browser console for any messages)
+        });
+    </script>
+</body>
+</html>
